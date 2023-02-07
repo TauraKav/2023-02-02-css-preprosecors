@@ -1,0 +1,46 @@
+@use'scss/spacing'
+@use'scss/colors'
+
+.wrapper {
+    padding: $spacing-medium;
+  
+    &.full-width {
+      width: 100%;
+    }
+  
+    &.half-width {
+      width: 50%;
+    }
+  
+    &.bg-dark {
+      background-color: $color-dark;
+    }
+  
+    h2 {
+      font-size: 40px;
+  
+      &.color-red {
+        color: $color-red;
+        cursor: pointer;
+        transition: color .5s ease-in-out;
+        
+        &:hover {
+          color: $color-green;
+        }
+      }
+    }
+  
+    p {
+      &:not(.empty) {
+  
+      &::before {
+        content: '- ';
+        color: $color-red;
+      }
+    }
+  
+      &:first-of-type {
+        font-size: 1.5em;
+      }
+    }
+  }

@@ -1,0 +1,24 @@
+
+
+@use 'sccs/base';
+@use 'sccs/colors';
+@use 'sccs/spacing';
+@use 'sccs/wrapper';
+
+.bg-dark {
+  background-color:colors.$black;
+  color: colors.$white;
+}
+
+
+
+.box {
+  border: 2px solid colors.$green;
+  padding: spacing.$smedium;
+  margin-bottom: $spacing-medium;
+}
+
+.container {
+  width: 70%;
+  margin: spacing.$smedium auto;
+}
